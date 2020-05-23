@@ -1,0 +1,324 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/home.css">
+  <title>Bodas | buscando serviços & Eventos</title>
+</head>
+<body>
+  <!-- Seção de cabeçalho  -->
+  <header>
+    <nav class="navbar fixed-top navbar-expand-lg bg-dark">
+      <a class="navbar-brand custom-logo" href="#"><svg class="bi bi-bootstrap" width="2em" height="2em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" d="M12 1H4a3 3 0 00-3 3v8a3 3 0 003 3h8a3 3 0 003-3V4a3 3 0 00-3-3zM4 0a4 4 0 00-4 4v8a4 4 0 004 4h8a4 4 0 004-4V4a4 4 0 00-4-4H4z" clip-rule="evenodd"/>
+        <path fill-rule="evenodd" d="M8.537 12H5.062V3.545h3.399c1.587 0 2.543.809 2.543 2.11 0 .884-.65 1.675-1.483 1.816v.1c1.143.117 1.904.931 1.904 2.033 0 1.488-1.084 2.396-2.888 2.396zM6.375 4.658v2.467h1.558c1.16 0 1.764-.428 1.764-1.23 0-.78-.569-1.237-1.541-1.237H6.375zm1.898 6.229H6.375V8.162h1.822c1.236 0 1.887.463 1.887 1.348 0 .896-.627 1.377-1.811 1.377z" clip-rule="evenodd"/>
+      </svg> <span class="text-white">Serviços para eventos</span></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+        <ul class="navbar-nav text-center">
+          <li class="nav-item">
+            <a class="nav-link custom-link" href="#">Casamentos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link custom-link" href="#">Noivados</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link custom-link" href="#">Cocktails</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link custom-link" href="#">Buffets</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link custom-link" href="#">Fotógrafo e Camera Man</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link custom-link" href="#">Salões de Festas</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link custom-link" href="#">Lua de Mel</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link custom-link" href="#">Outros</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link custom-link"data-toggle="modal" data-target="#searchModal">
+              <svg class="bi bi-search" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" d="M10.442 10.442a1 1 0 011.415 0l3.85 3.85a1 1 0 01-1.414 1.415l-3.85-3.85a1 1 0 010-1.415z" clip-rule="evenodd"/>
+                <path fill-rule="evenodd" d="M6.5 12a5.5 5.5 0 100-11 5.5 5.5 0 000 11zM13 6.5a6.5 6.5 0 11-13 0 6.5 6.5 0 0113 0z" clip-rule="evenodd"/>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+      
+    </nav>
+    <!-- Modal -->
+    <div class="modal fade" id="searchModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog  modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">O que procuras?</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form action="" method="get" class="formBusca">
+              <input type="search" name="q" maxlength="204" id="search" autofocus placeholder="Digite o serviço que procuras">
+              <input type="submit" class="btn btn-outline-primary my-2" value="Procurar">
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- Fim da Seção de cabeçalho  -->
+  
+  <!-- Seção de Carroussel  -->
+  <section>
+    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
+      <div class="carousel-inner carousel-header">
+        <div class="carousel-item active">
+          <img src="./assets/img/casamento-1.jpg" class="d-block w-100" alt="Casamento">
+        </div>
+        <div class="carousel-item">
+          <img src="./assets/img/lua de mel-1.jpg" class="d-block w-100" alt="Lua de mel">
+        </div>
+        <div class="carousel-item">
+          <img src="./assets/img/cocktail-1.jpg" class="d-block w-100" alt="Cocktails">
+        </div>
+        <div class="carousel-item">
+          <img src="./assets/img/buffet-1.jpg" class="d-block w-100" alt="Buffet">
+        </div>
+        <div class="carousel-item">
+          <img src="./assets/img/salao de festa-1.jpg" class="d-block w-100" alt="Salão de Festa e decoração">
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  </section>
+  
+  <!-- Fim Seção de Carroussel  -->
+  
+  <!-- Seção de menu de outros serviços -->
+  <section>
+    <nav class="bg-custom container p-4">
+      <ul class="nav justify-content-center">
+        <li class="nav-item">
+          <a class="nav-link custom-link" href="#">Venda de Aliança</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link custom-link" href="#">Estética</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link custom-link" href="#">Brindes</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link custom-link" href="#">Convites</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link custom-link" href="#">Decoração</a>
+        </li>
+      </ul>
+    </nav>
+  </section>
+  <!-- Fim Seção de menu de outros serviços -->
+  
+  <!-- Seção de outros serviços -->
+  <section class="container">
+    <h5 class="my-2 text-center badge-dark p-2">Serviços em Destaque</h5>
+    <div class="row row-cols-1 row-cols-md-3  mt-2 mb-4">
+      <div class="col mb-4">
+        <div class="card">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQtElxPtZdezBXk71Jd_R97pCTOiuaRYmUubkhzdtPJ80ZD6hXZ&usqp=CAU" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Convites</h5>
+            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col mb-4">
+        <div class="card">
+          <img src="https://t4.ftcdn.net/jpg/00/34/94/01/240_F_34940163_pxJ4LgNk6TVK1Ih35uXKotrIZkuVLxC1.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Estética</h5>
+            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col mb-4">
+        <div class="card">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSmkunxzldACiJqKm2ctBRmKaBWnYUF_cbjfq881SfV6hhqGPfK&usqp=CAU" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Alianças</h5>
+            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col mb-4">
+        <div class="card">
+          <img src="data:image/jpeg;base64,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" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Brindes e Lembrancinhas</h5>
+            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col mb-4">
+        <div class="card">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQO4kyqCVpNC4_cFqDH5mxDtbg_eU3LWuvMPFCQuD5iF0u1NBpz&usqp=CAU" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Decoração</h5>
+            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col mb-4">
+        <div class="card">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQt8J_AzUgMQc5OpXiCGyy7Fm_wVuSW0f2g3QfLePzHwBdbRj1j&usqp=CAU" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Música ao Vivo</h5>
+            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- FimSeção de outros serviços -->
+  
+  <!-- Inicio da Seção de parceiros -->
+  <section class="container-fluid parceiros-section">
+    <h4 class="my-2 text-center container bg-custom p-2 font-weight-bold">Parceiros que confiam em Nós</h4>
+    <div class="">
+      <div class="row">
+        <div class="col-sm-2 p-5">
+          <a href="https://www.tim.com.br/sp/para-voce" target="_blank">
+            <img class="img-fluid" src="./assets/img/tim-logo.png" alt="Tim">
+          </a>
+        </div>
+        <div class="col-sm-2 p-5">
+          <a href="https://www.ifood.com.br/" target="_blank">
+            <img class="img-fluid" src="./assets/img/ifood-logo.png" alt="Ifood">
+          </a>
+        </div>
+        <div class="col-sm-2 p-5">
+          <a href="https://web.facebook.com/?_rdc=1&_rdr" target="_blank">
+            <img class="img-fluid" src="./assets/img/facebook-logo.png" alt="Facebook">
+          </a>
+        </div>
+        <div class="col-sm-2 p-5">
+          <a href="https://www.codeminer42.com/" target="_blank">
+            <img class="img-fluid" src="./assets/svg/codemminer-logo.svg"  alt="Code Miner">
+          </a>
+        </div>
+        <div class="col-sm-2 p-5">
+          <a href="https://www.walmart.com/" target="_blank">
+            <img class="img-fluid" src="./assets/img/walmart-logo.png"  alt="Walmart">
+          </a>
+        </div>
+        <div class="col-sm-2 p-5">
+          <a href="https://pagseguro.uol.com.br/" target="_blank">
+            <img class="img-fluid" src="./assets/img/pagseguro-logo.png"  alt="Pagueseguro">
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Fim da Seção de parceiros -->
+  
+  <!-- Inicio da Seção de parceiros -->
+  <!-- <section class="container-fluid footer p-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-4 border-right">
+          <svg class="bi bi-bootstrap" width="2em" height="2em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" d="M12 1H4a3 3 0 00-3 3v8a3 3 0 003 3h8a3 3 0 003-3V4a3 3 0 00-3-3zM4 0a4 4 0 00-4 4v8a4 4 0 004 4h8a4 4 0 004-4V4a4 4 0 00-4-4H4z" clip-rule="evenodd"/>
+            <path fill-rule="evenodd" d="M8.537 12H5.062V3.545h3.399c1.587 0 2.543.809 2.543 2.11 0 .884-.65 1.675-1.483 1.816v.1c1.143.117 1.904.931 1.904 2.033 0 1.488-1.084 2.396-2.888 2.396zM6.375 4.658v2.467h1.558c1.16 0 1.764-.428 1.764-1.23 0-.78-.569-1.237-1.541-1.237H6.375zm1.898 6.229H6.375V8.162h1.822c1.236 0 1.887.463 1.887 1.348 0 .896-.627 1.377-1.811 1.377z" clip-rule="evenodd"/>
+          </svg>
+          Bodas 
+        </div>
+        <div class="col-sm-4 border-right">
+          <h5  class="text-center">Redes Sociais</h5>
+          
+        </div>
+        <div class="col-sm-4">
+          <h5 class="text-center">Contacto</h5>
+        </div>
+      </div>
+    </div>
+    
+  </section> -->
+  <footer class="mainfooter" role="contentinfo">
+    <div class="footer-middle">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 col-sm-6">
+          <!--Column1-->
+          <div class="footer-pad">
+            <a href="#">
+              <svg class="bi bi-bootstrap" width="3em" height="3em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" d="M12 1H4a3 3 0 00-3 3v8a3 3 0 003 3h8a3 3 0 003-3V4a3 3 0 00-3-3zM4 0a4 4 0 00-4 4v8a4 4 0 004 4h8a4 4 0 004-4V4a4 4 0 00-4-4H4z" clip-rule="evenodd"/>
+                <path fill-rule="evenodd" d="M8.537 12H5.062V3.545h3.399c1.587 0 2.543.809 2.543 2.11 0 .884-.65 1.675-1.483 1.816v.1c1.143.117 1.904.931 1.904 2.033 0 1.488-1.084 2.396-2.888 2.396zM6.375 4.658v2.467h1.558c1.16 0 1.764-.428 1.764-1.23 0-.78-.569-1.237-1.541-1.237H6.375zm1.898 6.229H6.375V8.162h1.822c1.236 0 1.887.463 1.887 1.348 0 .896-.627 1.377-1.811 1.377z" clip-rule="evenodd"/>
+              </svg>
+              Bodas
+            </a>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6">
+          <!--Column1-->
+          <div class="footer-pad">
+            <h4>Acesso Rápido</h4>
+            <ul class="list-unstyled">
+              <li><a href="#">Website Tutorial</a></li>
+              <li><a href="#">Accessibility</a></li>
+              <li><a href="#">Disclaimer</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">FAQs</a></li>
+              <li><a href="#">Webmaster</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <h4>Redes Sociais</h4>
+              <ul class="social-network social-circle">
+               <li><a href="#" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+               <li><a href="#" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+              </ul>				
+      </div>
+      </div>
+    <div class="row">
+      <div class="col-md-12 copy">
+        <p class="text-center">&copy; Copyright 2020 -  Bodas.  Todos direitos reservados.</p>
+      </div>
+    </div>
+  
+  
+    </div>
+    </div>
+  </footer>
+  <!-- Fim da Seção de parceiros -->
+  
+  <!-- Optional JavaScript -->
+  <script src="./js/parceiros.js"></script>
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</body>
+</html>
